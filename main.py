@@ -1,18 +1,16 @@
 from cars import Toyota
+from cars import Abstractnyi
 while True:
 
-    flag = input('What do you want ? 1 - create new car 2 - change car ')
+    flag = int(input('What do you want ? 1 - create new car 2 - change car '))
     if flag == 1:
-        print('creating car')
         newcar = Toyota()
-        n
+        newcar.add_to_list()
+
     elif flag == 2:
-        print('changing car')
-    #changing car
+        Abstractnyi.change_color()
     else:
-        print ('Incorrect value, try again')
+        print('Attention !')
 
 
-
-mc = Toyota()
-mc.printPrintData()
+    #changing car
