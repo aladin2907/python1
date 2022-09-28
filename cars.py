@@ -20,13 +20,12 @@ class Abstractnyi:
         return line_quantiti
 
     def change_color():
-        print('Chenging color')
+        print('Changing color')
         id_car = int(input('What ID do you want change ?'))
         if Abstractnyi.generate_new_id() > id_car > 0:
             data = Abstractnyi.read_data(id_car)
             new_color = input('What is new color ?')
             Abstractnyi.write_data(data, id_car, new_color)
-
         else:
             print('Car with this id not found')
 
@@ -38,7 +37,6 @@ class Abstractnyi:
             for line in myfile:
                 data.append(json.loads(line))
                 i += 1
-        print('Prochitali', len(data))
         return data
 
     def write_data(data, id, new_color):
@@ -47,5 +45,4 @@ class Abstractnyi:
             j = 0
             for i in data:
                 myfile.write(json.dumps(data[j]) + '\n')
-                # myfile.write(json.dumps(data[i]))
                 j += 1
