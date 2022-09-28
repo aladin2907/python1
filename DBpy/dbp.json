@@ -1,8 +1,4 @@
-{"1": {"Color": "sdfg", "engine: ": "2"}}
-{"2": {"Color": "sdfgh", "engine: ": "4"}}
-{"3": {"Color": "lkjbhggh", "engine: ": "4"}}
-{"4": {"Color": "jhvcfv", "engine: ": "5"}}
-{"5": {"Color": "jhg", "engine: ": "6"}}
-{"2": {"Color": "XXX", "engine: ": "4"}}
-{"2": {"Color": "XXX", "engine: ": "4"}}
-{"2": {"Color": "XXX", "engine: ": "4"}}
+{"1": {"Color": "red", "engine: ": "1"}}
+{"2": {"Color": "white", "engine: ": "2"}}
+{"3": {"Color": "black", "engine: ": "3"}}
+{"4": {"Color": "green", "engine: ": "4"}}
