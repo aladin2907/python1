@@ -1,6 +1,4 @@
 import json
-
-
 class Toyota:
     def __init__(self):
         print('Creating new car')
@@ -12,17 +10,14 @@ class Toyota:
         with open("DBpy/dbp.json", 'a') as myfile1:
             myfile1.write(json.dumps(self.car) + '\n')
 
-
-
 class Abstractnyi:
 
     def generate_new_id():
-        myfile1 = open("DBpy/dbp.json", 'r')
-        line_quantiti = 0
-        for line in myfile1:
-            line_quantiti += 1
-        myfile1.close()
-        return line_quantiti + 1
+        with open("DBpy/dbp.json", 'r') as myfile:
+            line_quantiti = 1
+            for line in myfile:
+                line_quantiti += 1
+        return line_quantiti
 
     def change_color():
         print('Chenging color')
