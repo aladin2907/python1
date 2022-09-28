@@ -9,9 +9,9 @@ class Toyota:
 
     def add_car_to_list(self):
         print('Adding new car to file')
-        myfile1 = open("DBpy/dbp.json", 'a')
-        myfile1.write(json.dumps(self.car) + '\n')
-        myfile1.close()
+        with open("DBpy/dbp.json", 'a') as myfile1:
+            myfile1.write(json.dumps(self.car) + '\n')
+
 
 
 class Abstractnyi:
